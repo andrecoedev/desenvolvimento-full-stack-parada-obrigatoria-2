@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-07T12:34:19.361Z",
+  "method": "Playwright com Chrome real, teclas simuladas; sem NVDA neste teste",
+  "results": [
+    {
+      "name": "Link para pular navegação",
+      "result": "PASS",
+      "detail": "Tab focou o link; Enter transferiu o foco à região principal."
+    },
+    {
+      "name": "Botão com Enter e Espaço",
+      "result": "PASS",
+      "detail": "Duas cópias adicionadas; status atualizado a cada ação."
+    },
+    {
+      "name": "Rota e foco",
+      "result": "PASS",
+      "detail": "Shift+Tab e Enter abriram /cart; foco no h1 e título do documento atualizado."
+    },
+    {
+      "name": "Remoção de cópias",
+      "result": "PASS",
+      "detail": "Espaço removeu as duas cópias de Book 1, preservou Book 2 e devolveu foco ao h1."
+    },
+    {
+      "name": "Carrinho vazio e retorno",
+      "result": "PASS",
+      "detail": "Último título removido; link de retorno operou com Enter, sem perda de foco."
+    },
+    {
+      "name": "Refluxo",
+      "result": "PASS",
+      "detail": "Sem rolagem horizontal nos tamanhos de viewport de 320 e 640 CSS pixels; não substitui teste de zoom real."
+    },
+    {
+      "name": "Execução",
+      "result": "PASS",
+      "detail": "Nenhum erro JavaScript capturado no fluxo."
+    }
+  ]
+}

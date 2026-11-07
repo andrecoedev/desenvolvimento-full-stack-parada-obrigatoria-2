@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="260" viewBox="0 0 200 260">
+  <rect width="200" height="260" rx="4" fill="#763e2e"/>
+  <path d="M20 0v260" stroke="#d29875" stroke-width="2"/>
+  <path d="M60 65h95v70H60z" fill="#f0d4a5"/>
+  <path d="M107 65v70M75 85h20m-20 15h20m25-15h20m-20 15h20" stroke="#763e2e" stroke-width="3"/>
+  <text x="110" y="192" text-anchor="middle" font-family="Arial" font-size="25" fill="white">Book 2</text>
+  <path d="M70 215h80" stroke="#f0d4a5" stroke-width="2"/>
+</svg>
