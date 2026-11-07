@@ -6,7 +6,7 @@ Data: 07/11/2026. Base: exemplo da atividade Desenvolvimento Full Stack - Parada
 
 Lighthouse 13.6.0, Chrome real em modo headless, desktop, categoria Accessibility. Catálogo: 84/100; carrinho vazio: 79/100. Os relatórios HTML e JSON estão em `evidencias/`. As duas falhas automáticas foram `html-has-lang` (sem idioma no elemento html) e `landmark-one-main` (sem região principal). As notas diferem porque as verificações aplicáveis às páginas não são idênticas.
 
-A inspeção encontrou também ausência de `h1`, botões repetidos com nomes genéricos, ausência de navegação entre páginas e de anúncio para alterações do carrinho. Os botões nativos já funcionavam com teclado. A base não continha imagens, logo não houve falha inicial de `alt` a corrigir. Não foi afirmado que existia falha de contraste na base.
+A inspeção do código mostrou que faltavam um `h1`, links entre as páginas e avisos para as alterações do carrinho. Os botões tinham nomes genéricos, mas já funcionavam com teclado. O exemplo inicial não tinha imagens. A auditoria inicial não registrou falhas de contraste.
 
 ## Melhorias e relação com WCAG 2.2
 

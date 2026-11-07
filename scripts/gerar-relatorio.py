@@ -1,4 +1,4 @@
-"""Gera o relatório com evidências existentes, sem fabricar resultados."""
+"""Gera o PDF da atividade de acessibilidade da livraria."""
 import json
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'output' / 'pdf'
 OUT.mkdir(parents=True, exist_ok=True)
 FILE = OUT / 'AndreLucasCoelhoDeJesus_ProjetoLivrariaOnline_Acessibilidade.pdf'
-REPO = 'https://github.com/andrecoedev/desenvolvimento-full-stack-parada-obrigatoria-2/tree/dev'
+REPO = 'https://github.com/andrecoedev/desenvolvimento-full-stack-parada-obrigatoria-2'
 for name, filename in [('Arial', 'arial.ttf'), ('Arial-Bold', 'arialbd.ttf')]:
     pdfmetrics.registerFont(TTFont(name, 'C:/Windows/Fonts/' + filename))
 pdfmetrics.registerFontFamily('Arial', normal='Arial', bold='Arial-Bold', italic='Arial', boldItalic='Arial-Bold')
@@ -77,7 +77,7 @@ add('O catálogo passou pela primeira auditoria antes das mudanças. O carrinho 
 table([['Página auditada', 'Antes', 'Depois'], ['Catálogo', score('antes-catalogo'), score('depois-catalogo')], ['Carrinho vazio', score('antes-carrinho'), score('depois-carrinho')]], [299, 100, 100])
 add('A nota do Lighthouse vai até 100 e considera as verificações automáticas aplicáveis à página. Mesmo com a nota máxima, o uso por teclado e a leitura com NVDA precisam ser conferidos. Essa nota não equivale a uma avaliação completa das WCAG.', 'SmallText')
 section('Código e evidências')
-add(f'<link href="{REPO}" color="#174f42"><u>Abrir o repositório no GitHub - branch dev</u></link>')
+add(f'<link href="{REPO}" color="#174f42"><u>Código da atividade no GitHub</u></link>')
 add('Repositório: andrecoedev / desenvolvimento-full-stack-parada-obrigatoria-2. A pasta evidencias reúne os relatórios originais em HTML e JSON, as capturas da aplicação e o resultado do teste de teclado.', 'SmallText')
 if not nvda:
     add('O código e as auditorias estão concluídos. Falta confirmar a leitura com NVDA e atualizar esse resultado antes de enviar o PDF ao AVA.', 'SmallText')
