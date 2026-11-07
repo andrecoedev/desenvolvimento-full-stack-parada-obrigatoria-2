@@ -68,7 +68,7 @@ nvda = json.loads(nvda_file.read_text(encoding='utf-8')) if nvda_file.exists() e
 
 title('Livraria online: acessibilidade')
 add('Desenvolvimento Full Stack<br/><b>Parada Obrigatória 2 - SENAI</b>', 'SectionTitle')
-add('<b>Aluno:</b> André Lucas Coelho de Jesus<br/><b>Data:</b> 7 de novembro de 2026<br/><b>Prazo no enunciado:</b> 9 de novembro de 2026, às 23h59')
+add('<b>Aluno:</b> André Lucas Coelho de Jesus<br/><b>Data:</b> 7 de novembro de 2026')
 section('1. Descrição do projeto')
 add('Esta atividade usa uma livraria simples, com dois livros no catálogo. É possível adicionar mais de um exemplar ao carrinho e depois remover os títulos escolhidos. A aplicação usa React na interface, Redux para guardar os itens e React Router para navegar entre o catálogo e o carrinho. Não há cadastro ou pagamento. Ao recarregar a página, o carrinho fica vazio, pois os dados são guardados apenas na memória.')
 section('2. Desenvolvimento da atividade')
