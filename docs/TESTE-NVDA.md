@@ -2,7 +2,9 @@
 
 Status: PENDENTE DE CONFIRMAÇÃO DA LEITURA. Não registrar esta etapa como aprovada.
 
-Foi baixado o NVDA 2026.3 do site oficial. A assinatura digital foi verificada como válida, com publicador NV Access Limited. Foi preparada uma cópia portátil em `tmp/`, ignorada pelo Git. O programa inicializou, mas a automação de janelas não conseguiu concluir a interação com a tela de boas-vindas. A abertura do programa não comprova o teste da livraria.
+Foi baixado o NVDA 2026.3 do site oficial. A assinatura digital foi verificada como válida, com publicador NV Access Limited. Foi preparada uma cópia portátil em `tmp/`, ignorada pelo Git. O programa inicializou, mas a automação de janelas não conseguiu concluir a interação com a tela de boas-vindas.
+
+Na nova tentativa, em 07/11/2026, o NVDA iniciou e o Chrome abriu a livraria em `http://127.0.0.1:5174/`. Ao tentar inspecionar a janela do Chrome, a ferramenta encerrou o controle por não conseguir verificar o endereço da página com segurança. Nenhum novo comando de interface foi enviado depois desse bloqueio. A abertura dos programas não confirma que o NVDA leu os controles ou os avisos da livraria; essa verificação permanece pendente.
 
 ## Roteiro individual
 
